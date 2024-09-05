@@ -1,13 +1,13 @@
 {
-    "host" : "smtp.gmail.com",
-    "port" : "587",
+    "host" : "&{smtp.host}",
+    "port" : "&{smtp.port}",
     "auth" : {
         "enable" : true,
-        "username" : "dairoca90@gmail.com",
-        "password" : "lmlh nywu nlvz llyl"
+        "username" : "&{smtp.username}",
+        "password" : "&{smtp.password}"
     },
     "starttls" : {
         "enable" : true
     },
-    "from" : "dairoca90@gmail.com"
+    "from" : "&{smtp.from}"
 }
